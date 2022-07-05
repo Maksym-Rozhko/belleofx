@@ -1,0 +1,19 @@
+.header {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 111;
+    cursor: default;
+    padding: 21px 0;
+
+    .wrapper {
+        max-width: 1720px;
+    }
+    
+}
+
+.header.active-scroll {
+    background-color: #202435;
+}

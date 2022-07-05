@@ -1,0 +1,21 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "Effra", sans-serif;
+  --content-width: 2000px;
+  --container-offset: 0px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --cs-white: #fff;
+  --cs-body-bg: var(--cs-white);
+  --cs-violet-main: #875BE7;
+  --cs-violet-bright: #9970EC;
+  --cs-violet-light: #B395F1;
+  --cs-violet-lighter: #DBCCF8;
+  --cs-text: #000;
+  -cs-bg-light: #F2F6FA;
+  -cs-bg-lighter: #F7F8FB;
+  -cs-bg-white: #F5F5F5;
+}
