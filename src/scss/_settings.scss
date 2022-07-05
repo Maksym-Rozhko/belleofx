@@ -12,6 +12,7 @@ body {
   font-family: var(--font-family, sans-serif);
   font-size: 16px;
   line-height: 19px;
+  font-weight: normal;
   background-color: var(--cs-body-bg);
   color: var(--cs-light);
   overflow-x: hidden;
@@ -117,3 +118,45 @@ a {
   border: 1px solid var(--cs-violet-bright);
 }
 ::-webkit-scrollbar-thumb:vertical:hover {background:var(--cs-violet-main);}
+
+@media (max-width: 1920px) {
+  .wrapper {
+    max-width: 1520px;
+  }
+}
+
+@include big-desktop {
+  .wrapper {
+    max-width: 1240px;
+  }
+}
+
+@include small-desktop {
+  .wrapper {
+    max-width: 1080px;
+  }
+}
+
+@include small-desktop {
+  .wrapper {
+    max-width: 1080px;
+  }
+}
+
+@include tablet {
+  .wrapper {
+    max-width: 904px;
+  }
+}
+
+@include small-tablet {
+  .wrapper {
+    max-width: 670px;
+  }
+}
+
+@media (max-width: 428px) {
+  .wrapper {
+    max-width: 388px;
+  }
+}

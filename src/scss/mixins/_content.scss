@@ -1,8 +1,38 @@
 @mixin btn-main {
-    
-    
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: #FFFFFF; 
+    background: linear-gradient(90deg, #8F4DED 0%, #6D43E1 100.02%);
+    border-radius: 4px;
+    transition: all ease-in-out .4s;
+    padding: 22px 32px;
+    max-width: 175px;
+    width: 100%;
+
     &:hover {
-       
+        background: linear-gradient(90deg, var(--cs-text-2) 0%, var(--cs-text-2) 100.02%);
+    }
+}
+
+@mixin btn-transparent {
+    background: linear-gradient(90deg, #8F4DED 0%, #6D43E1 100.02%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    padding: 25px;
+    border-radius: 4px;
+    border: 2px solid var(--cs-violet-main);
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 100%;
+    transition: all ease-in-out .4s;
+
+    &:hover {
+        border: 2px solid var(--cs-text-2);
+        -webkit-text-fill-color: var(--cs-text-2);
     }
 }
 

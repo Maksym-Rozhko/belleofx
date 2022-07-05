@@ -1,19 +1,167 @@
 .header {
-    background-color: transparent;
+    background-color: var(--cs-white);
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 111;
     cursor: default;
-    padding: 21px 0;
+    padding: 20px 0;
+    transition: all ease-in-out .4s;
 
-    .wrapper {
-        max-width: 1720px;
+    &__container {
+        @include flex-all-sb;
+    }
+
+    .logo-link {
+        .logo {
+            min-width: 213px;
+
+            &--mob {
+                display: none;
+            }
+        }
+    }
+
+    &__left {
+        display: none;
+    }
+
+    .nav {
+        ul {
+            @include flex-v-center;
+            padding-left: 0;
+            margin-top: 0;
+            margin-bottom: 0;
+            list-style: none;
+            
+            li {
+                position: relative;
+                a {
+                    font-weight: 400;
+                    font-size: 22px;
+                    line-height: 100%;
+                    color: var(--cs-text);
+                    transition: all ease-in-out .4s;
+
+                    &:hover {
+                        background: linear-gradient(90deg, #6B2AC8 0%, #5127C6 100.02%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        background-clip: text;
+                        text-fill-color: transparent;
+                    }
+                }
+
+                &.parent {
+                    
+                    a {
+                        position: relative;
+                        padding-right: 12px;
+
+                        &:hover {
+                            &::after {
+                                border-color: #5127C6;
+                                transform: rotate(45deg);
+                            }
+                        }
+
+                        &::after {
+                            position: absolute;
+                            content: "";
+                            width: 5px;
+                            height: 5px;
+                            border-width: 2px 0 0 2px;
+                            border-style: solid;
+                            border-color: var(--cs-text);
+                            top: calc(50% - -2px);
+                            right: 0;
+                            transform: rotate(-135deg);
+                            transform-origin: top;
+                            transition: all ease-in-out .4s;
+                        }
+                    }
+                    ul {
+                        min-width: 208px;
+                        align-items: flex-start;
+                        flex-direction: column;
+                        position: absolute;
+                        background-color: rgba(255, 255, 255, .98);
+                        padding: 14px 20px;
+                        left: -20px;
+                        transform: translateY(100px);
+                        opacity: 0;
+                        pointer-events: none;
+                        transition: all ease-in-out .4s;
+
+                        li {
+                            margin-right: 0;
+                            margin-top: 30px;
+
+                            a {
+                                padding-right: 0;
+    
+                                &::after {
+                                    content: none;
+                                }
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        ul {
+                            pointer-events: all;
+                            transform: translateY(0);
+                            opacity: 1;
+                        }
+                    }
+                }
+
+                &:not(:last-child) {
+                    margin-right: 40px;
+                }
+            }
+        }
     }
     
+    &__right {
+        @include flex-v-center;
+        gap: 20px;
+
+        .btn-transparent {
+            @include btn-transparent;
+        }
+
+        .btn-main {
+            @include btn-main;
+        }
+    }
+
+    .languages {
+        ul {
+            border: 2px solid #E6E6E6;
+            border-radius: 4px;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-left: 0;
+            margin-top: 0;
+            margin-bottom: 0;
+            list-style: none;
+        }
+
+        a {
+            padding: 15px;
+        }
+    }
 }
 
 .header.active-scroll {
-    background-color: #202435;
+    background-color: rgba(255,255,255, .98);
+}
+
+body {
+    background-color: #5127C6;
 }
