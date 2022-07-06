@@ -156,6 +156,87 @@
             padding: 15px;
         }
     }
+
+    .mobile-menu {
+        @include mobile-menu;
+
+        &__content {
+            padding: 60px;
+        }
+
+        &__top {
+            @include flex-all-sb;
+        }
+
+        .nav {
+            display: block;
+            margin-top: 100px;
+            margin-bottom: 60px;
+
+            ul {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 40px;
+
+                li.parent {
+                    a {
+                        padding-right: 0;
+                        
+                        &::after {
+                            content: none;
+                        }
+                    }
+
+                    ul {
+                        display: none;
+                    }
+                }
+
+                li {
+                    a {
+                        font-weight: 400;
+                        font-size: 36px;
+                        line-height: 100%;
+                        color: var(--cs-white);
+                    }
+
+                    &:not(:last-child) {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+
+        .header__right {
+            .btn-main {
+                font-weight: 700;
+                border: 1px solid transparent;
+                padding: 16px 27px;
+                max-width: 220px;
+            }
+            .btn-main--white {
+                color: var(--cs-text-2);
+                background: var(--cs-white);
+
+                &:hover {
+                    background: transparent;
+                    color: var(--cs-white);
+                    border: 1px solid var(--cs-white);
+                }
+            }
+
+            .btn-main--black {
+                color: var(--cs-white);
+                background: var(--cs-text-2);
+
+                &:hover {
+                    background: transparent;
+                    color: var(--cs-text-2);
+                    border: 1px solid var(--cs-text-2);
+                }
+            }
+        }
+    }
 }
 
 .header.active-scroll {

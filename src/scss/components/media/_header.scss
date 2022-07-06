@@ -217,6 +217,43 @@
                 }
             }
         }
+        .mobile-menu {
+            &__content {
+                padding: 20px;
+            }
+    
+            &__top {
+                .logo-link {
+                    .logo {
+                        display: block;
+                    }
+                }
+            }
+    
+            .nav {
+                margin-top: 70px;
+                margin-bottom: 70px;
+    
+                ul {
+                    align-items: center;
+                    gap: 50px;
+    
+                    li {
+                        a {
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+    
+            .header__right {
+                flex-direction: column;
+    
+                .btn-main {
+                    max-width: inherit;
+                }
+            }
+        }
     }
 }
 
@@ -247,6 +284,12 @@
 
             .btn-main {
                 padding: 10px 16px;
+            }
+        }
+
+        .mobile-menu {
+            &__container {
+                width: 100%;
             }
         }
     }

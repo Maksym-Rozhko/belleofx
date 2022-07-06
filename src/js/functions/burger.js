@@ -7,7 +7,7 @@ import { enableScroll } from '../functions/enable-scroll';
   const menuItems = document?.querySelectorAll('[data-menu-item]');
   const overlay = document?.querySelector('[data-menu-overlay]');
   const navigationBackground = document.querySelector('.navigation-bg');
-
+  const btnMenuCloseElem = document.querySelector('.btn-menu-close');
 
   burger?.addEventListener('click', (e) => {
     burger?.classList.toggle('burger--active');
@@ -44,5 +44,9 @@ import { enableScroll } from '../functions/enable-scroll';
       navigationBackground.classList.remove('navigation-bg__active');
       enableScroll();
     });
+  });
+
+  btnMenuCloseElem.addEventListener('click', () => {
+    burger.click();
   });
 })();
