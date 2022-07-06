@@ -386,3 +386,104 @@
         }
     }
 }
+.platforms {
+    padding: 120px 0;
+    background: url('../../images/icon/bg-circles.svg') no-repeat center/contain,linear-gradient(90deg, #8F4DED 0%, #6D43E1 100.02%);
+
+    .title {
+        @include title;
+        margin-top: 0;
+        margin-bottom: 67px;
+        color: var(--cs-white);
+        text-align: center;
+    }
+
+    &__container {
+        background: linear-gradient(90deg, #6B2AC8 0%, #5127C6 100.02%);
+        opacity: .8;
+        border-radius: 16px;
+        padding: 40px 50px;
+        @include flex-all-sb;
+        margin-bottom: 75px;
+    }
+
+    &__content {
+        max-width: 792px;
+    }
+    
+    &__title {
+        @include title;
+        font-size: 50px;
+        color: var(--cs-white);
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 43px;
+        color: var(--cs-white);
+        margin-top: 30px;
+        margin-bottom: 25px;
+    }
+
+    .list {
+        margin-bottom: 50px;
+
+        &__item {
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 42px;
+            color: var(--cs-white);
+            position: relative;
+            padding-left: 45px;
+            
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+            }
+
+            &::before {
+                width: 26px;
+                height: 26px;
+                border-radius: 50%;
+                border: 2px solid var(--cs-white);
+                left: 0;
+                top: calc(50% - 13px);
+            }
+
+            &::after {
+                width: 12px;
+                height: 8px;
+                background-image: url('../../images/icon/check-arrow-white.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                left: 7px;
+                top: calc(50% - 4px);
+            }
+        }
+    }
+
+    &__images {
+        max-width: 904px;
+    }
+
+    .btn-main {
+        @include btn-main;
+        display: block;
+        max-width: 300px;
+        text-align: center;
+
+        &--white {
+            color: var(--cs-text-2);
+            background: var(--cs-white);
+    
+            &:hover {
+                background: var(--cs-text-2);
+                color: var(--cs-white);
+                border: 1px solid var(--cs-text-2);
+            }
+        }
+    }
+}
