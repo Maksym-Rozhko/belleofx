@@ -14,6 +14,9 @@
     right: -110px;
     top: 550px;
 }
+.main__large {
+    position: relative;
+}
 .main-screen {
     margin-top: 115px;
     background: url('../../images/icon/bg-circles.svg') no-repeat right/1850px, linear-gradient(90deg, #6B2AC8 0%, #5127C6 100.02%);
@@ -117,7 +120,7 @@
 .main-info {
     position: absolute;
     width: 100%;
-    bottom: 80px;
+    top: 1000px;
     z-index: 1;
     
     &__container {
@@ -147,5 +150,85 @@
                 color: var(--cs-text);
             }
         }
+    }
+}
+
+.available {
+    padding: 200px 0;
+
+    &__container {
+        @include flex-all-sb;
+    }
+
+    &__content {
+        max-width: 720px;
+    }
+
+    .title {
+        @include title;
+        margin-bottom: 28px;
+    }
+
+    .text {
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 43px;
+        color: var(--cs-text);
+        margin-top: 0;
+        margin-bottom: 28px;
+
+        .accent {
+            color: var(--cs-violet-main);
+        }
+    }
+
+    .list-check {
+        margin-bottom: 50px;
+
+        &__item {
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 50px;
+            color: var(--cs-text);
+            padding-left: 36px;
+            position: relative;
+
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+            }
+
+            &::before {
+                width: 26px;
+                height: 26px;
+                border-radius: 50px;
+                border: 2px solid var(--cs-violet-main);
+                left: 0;
+                top: calc(50% - 13px);
+            }
+
+            &::after {
+                background-image: url('../../images/icon/check-arrow.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                width: 12px;
+                height: 12px;
+                left: 7px;
+                top: calc(50% - 6px);
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .btn-main {
+        @include btn-main;
+        max-width: 300px;
+        display: block;
+        text-align: center;
     }
 }
