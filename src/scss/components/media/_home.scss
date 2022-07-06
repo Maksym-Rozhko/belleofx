@@ -95,6 +95,56 @@
             max-width: 240px;
         }
     }
+    .accounts {
+        padding: 100px 0;
+
+        .title {
+            margin-bottom: 60px;
+            font-size: 40px;
+        }
+
+        &__container {
+            gap: 15px;
+        }
+
+        .account {
+            padding-bottom: 48px;
+            max-width: 368px;
+
+            &__label {
+                max-width: 212px;
+                font-size: 16px;
+                padding: 13px 0;
+            }
+
+            &__name {
+                font-size: 36px;
+                margin-top: 32px;
+                padding-bottom: 32px;
+            }
+
+            &__list {
+                margin-top: 44px;
+                margin-bottom: 38px;
+
+                &-item {
+                    padding-left: 34px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    
+                    .name,
+                    .value {
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            .btn-main {
+                max-width: 300px;
+                padding: 17px;
+            }
+        }
+    }
 }
 
 @include big-desktop {
@@ -204,6 +254,62 @@
             padding: 11px 22px;
         }
     }
+    .accounts {
+        padding: 80px 0;
+
+        .title {
+            margin-bottom: 40px;
+            font-size: 36px;
+        }
+
+        &__container {
+            gap: 12px;
+        }
+
+        .account {
+            padding-bottom: 35px;
+            max-width: 276px;
+
+            &__label {
+                max-width: 160px;
+                font-size: 15px;
+                padding: 10px 0;
+            }
+
+            &__name {
+                font-size: 24px;
+                margin-top: 24px;
+                padding-bottom: 28px;
+            }
+
+            &__list {
+                margin-top: 33px;
+                margin-bottom: 30px;
+
+                &-item {
+                    padding-left: 25px;
+                    padding-right: 25px;
+                    padding-top: 7px;
+                    padding-bottom: 7px;
+                    
+                    .name,
+                    .value {
+                        font-size: 15px;
+                    }
+
+                    .value {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            .btn-main {
+                max-width: 225px;
+                padding: 11px;
+                font-size: 16px;
+            }
+        }
+    }
 }
 
 @include small-desktop {
@@ -265,6 +371,27 @@
 
         .btn-main {
             max-width: 180px;
+        }
+    }
+    .accounts {
+        padding: 60px 0;
+
+        &__container {
+            gap: 10px;
+        }
+
+        .account {
+            &__list {
+                &-item {
+                    .name,
+                    .value {
+                        font-size: 14px;
+                    }
+                    .value {
+                        font-weight: 400;
+                    }
+                }
+            }
         }
     }
 }
@@ -359,6 +486,16 @@
             padding: 19px 22px;
         }
     }
+    .accounts {
+        .overflow-wrapper {
+            overflow: auto;
+            padding: 15px 0;
+        }
+
+        &__container {
+            min-width: 1080px;
+        }
+    }
 }
 
 @include small-tablet {
@@ -447,6 +584,38 @@
             }
         }
     }
+    .accounts {
+        &__container {
+            gap: 20px;
+        }
+
+        .title {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        .account {
+            padding-bottom: 20px;
+            min-width: 276px;
+
+            &__list {
+                &-item {
+                    .name,
+                    .value {
+                        font-size: 15px;
+                    }
+                    .value {
+                        font-weight: 700;
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            .btn-main {
+                padding: 19px;
+            }
+        }
+    }
 }
 
 @include mobile {
@@ -522,5 +691,57 @@
     }
     .available {
         padding-top: 100px;
+    }
+    .accounts {
+        padding-top: 30px;
+
+        &__container {
+            min-width: inherit;
+            @include flex-v-center;
+            flex-direction: column;
+        }
+
+        .account {
+            padding-bottom: 48px;
+            min-width: inherit;
+            max-width: 368px;
+            width: 100%;
+
+            &__label {
+                max-width: 212px;
+                font-size: 16px;
+                padding: 13px;
+            }
+
+            &__name {
+                font-size: 30px;
+                margin-top: 30px;
+                padding-bottom: 41px;
+            }
+
+            &__list {
+                margin-top: 44px;
+                margin-bottom: 38px;
+
+                &-item {
+                    padding: 13px 34px;
+
+                    .name,
+                    .value {
+                        font-size: 16px;
+                    }
+                    .value {
+                        font-weight: 700;
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            .btn-main {
+                font-size: 18px;
+                padding: 17px;
+                max-width: 300px;
+            }
+        }
     }
 }

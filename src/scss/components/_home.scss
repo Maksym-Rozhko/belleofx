@@ -13,6 +13,11 @@
     z-index: 111;
     right: -110px;
     top: 550px;
+    transition: all ease-in-out .4s;
+
+    &:hover {
+        background-color: rgba(255,255,255, .5);
+    }
 }
 .main__large {
     position: relative;
@@ -230,5 +235,154 @@
         max-width: 300px;
         display: block;
         text-align: center;
+    }
+}
+
+.accounts {
+    padding: 120px 0;
+    background-color: var(--cs-bg-light);
+
+    .title {
+        @include title;
+        margin-bottom: 80px;
+        text-align: center;
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+    .account {
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 16px;
+        background-color: var(--cs-white);
+        padding-bottom: 60px;
+        max-width: 460px;
+        outline: 4px solid transparent;
+        transition: all ease-in-out .4s;
+
+        &__header {
+            border-radius: 12px 12px 0px 0px;
+        }
+
+        &__label {
+            border-radius: 0px 0px 6px 6px;
+            background-color: var(--cs-bg-lighter);
+            max-width: 265px;
+            width: 100%;
+            text-align: center;
+            margin: 0 auto;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 100%;
+            color: var(--cs-text-2);
+            padding: 18px 0;
+        }
+
+        &__name {
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 100%;
+            color: var(--cs-text-2);
+            text-align: center;
+            margin-top: 41px;
+            margin-bottom: 0;
+            padding-bottom: 41px;
+            transition: all ease-in-out .4s;
+        }
+
+        &__list {
+            margin-top: 44px;
+            margin-bottom: 38px;
+
+            &-item {
+                @include flex-all-sb;
+                padding-left: 65px;
+                padding-right: 34px;
+                padding-top: 16px;
+                padding-bottom: 16px;
+                
+                .name {
+                    position: relative;
+                    padding-left: 20px;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        background-image: url('../../images/icon/check-arrow.svg');
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                        width: 14px;
+                        height: 10px;
+                        left: 0;
+                        top: calc(50% - 5px);
+                    }
+                }
+                .name,
+                .value {
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 100%;
+                    color: var(--cs-text);
+                }
+
+                .value {
+                    font-family: 'Gotham', sans-serif;
+                    font-weight: 600;
+                }
+
+                &:nth-child(even) {
+                    background-color: rgba(207,212,233, .16);
+                }
+            }
+        }
+
+        .btn-main {
+            @include btn-main;
+            display: block;
+            max-width: 375px;
+            text-align: center;
+            padding: 25px;
+            margin: 0 auto;
+
+            &:hover {
+                background: linear-gradient(90deg, #6B2AC8 0%, #5127C6 100.02%);
+            }
+        }
+
+        &:hover {
+            filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.1));
+            outline: 4px solid var(--cs-violet-main);
+
+            .account__name {
+                background: linear-gradient(90deg, #8F4DED 0%, #6D43E1 100.02%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+
+        &.standard {
+            .account__header {
+                background-color: var(--cs-violet-lighter);
+            }
+        }
+        &.swap {
+            .account__header {
+                background-color: var(--cs-violet-light);
+            }
+        }
+        &.zero {
+            .account__header {
+                background-color: var(--cs-violet-bright);
+            }
+        }
+        &.pro {
+            .account__header {
+                background-color: var(--cs-violet-main);
+            }
+        }
     }
 }
