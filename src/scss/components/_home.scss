@@ -486,4 +486,69 @@
             }
         }
     }
+
+    .subtitle {
+        @include title;
+        margin-bottom: 37px;
+        color: var(--cs-white);
+        font-size: 50px;
+        text-align: center;
+    }
+
+    &__downloads {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+        max-width: 1579px;
+        margin: 0 auto;
+
+        .device {
+            background: var(--cs-text-2);
+            border-radius: 4px;
+            padding: 37px 40px;
+            @include flex-v-center;
+            max-width: 370px;
+
+            &__icon {
+                .icon {
+                    width: 60px;
+                    height: 60px;
+                    display: block;
+                    fill: #8F4DED;
+                    transition: all ease-in-out .4s;
+                }
+            }
+
+            &__info {
+                margin-left: 23px;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            &__title,
+            &__name {
+                font-size: 22px;
+                line-height: 24px;
+                color: var(--cs-white);
+                font-feature-settings: 'liga' off;
+            }
+
+            &__title {
+                font-weight: 400;
+            }
+
+            &__name {
+                font-weight: 700;
+            }
+
+            &:hover {
+                .device__icon {
+                    .icon {
+                        fill: var(--cs-white);
+                    }
+                }
+            }
+        }
+    }
 }
