@@ -1,0 +1,97 @@
+.main-screen {
+    margin-top: 115px;
+    background: url('../../images/icon/bg-circles.svg') no-repeat right/1850px, linear-gradient(90deg, #6B2AC8 0%, #5127C6 100.02%);
+    padding-top: 97px;
+    padding-bottom: 157px;
+
+    &__container {
+        @include flex-all-sb;
+        margin-bottom: 60px;
+    }
+
+    .title {
+        font-weight: 700;
+        font-size: 87px;
+        line-height: 112%;
+        color: var(--cs-text);
+        margin-top: 0;
+        margin-bottom: 0;
+        max-width: 810px;
+
+        span {
+            color: var(--cs-white);
+        }
+    }
+
+    .text {
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 42px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        color: var(--cs-white);
+        max-width: 582px;
+    }
+
+    .btn-main {
+        @include btn-main;
+        max-width: 300px;
+        font-weight: 700;
+        font-size: 22px;
+        border: 1px solid transparent;
+
+        &--black {
+            color: var(--cs-white);
+            background: var(--cs-text-2);
+    
+            &:hover {
+                background: transparent;
+                color: var(--cs-white);
+                border: 1px solid var(--cs-white);
+            }
+        }
+    }
+
+    &__left {
+        max-width: 810px;
+        width: 100%;
+    }
+
+    &__right {
+        max-width: 1200px;
+        width: 100%;
+
+        .image {
+            width: 100%;
+            max-height: 680px;
+            object-fit: contain;
+        }
+    }
+
+    .main-slider {
+        &__controls {
+            position: static;
+
+            .swiper-pagination-bullet {
+                border-radius: 20px;
+                width: 60px;
+                height: 5px;
+                background: rgba(255,255,255, .5);
+                opacity: 1;
+                position: relative;
+
+                &-active {
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        background: var(--cs-white);
+                        border-radius: 30px 0px 0px 30px;
+                        width: 44px;
+                        height: 5px;
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
