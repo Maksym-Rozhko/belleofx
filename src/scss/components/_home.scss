@@ -1,3 +1,19 @@
+.btn-fixed {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--cs-white);
+    border-radius: 4px 4px 0px 0px;
+    transform: rotate(-90deg);
+    background-color: rgba(255,255,255, .2);
+    padding: 22px 42px;
+    position: fixed;
+    z-index: 111;
+    right: -110px;
+    top: 550px;
+}
 .main-screen {
     margin-top: 115px;
     background: url('../../images/icon/bg-circles.svg') no-repeat right/1850px, linear-gradient(90deg, #6B2AC8 0%, #5127C6 100.02%);
@@ -39,14 +55,16 @@
         font-weight: 700;
         font-size: 22px;
         border: 1px solid transparent;
+        display: block;
+        text-align: center;
 
         &--black {
             color: var(--cs-white);
             background: var(--cs-text-2);
     
             &:hover {
-                background: transparent;
-                color: var(--cs-white);
+                background: var(--cs-white);
+                color: var(--cs-text);
                 border: 1px solid var(--cs-white);
             }
         }
@@ -91,6 +109,42 @@
                         left: 0;
                     }
                 }
+            }
+        }
+    }
+}
+
+.main-info {
+    position: absolute;
+    width: 100%;
+    bottom: 80px;
+    z-index: 1;
+    
+    &__container {
+        background: var(--cs-white);
+        box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+        border-radius: 16px;
+        padding: 75px 158px;
+        @include flex-all-sb;
+
+        .item {
+            @include flex-v-center;
+            flex-direction: column;
+
+            &__accent {
+                font-family: 'Gotham', sans-serif;
+                font-weight: 700;
+                font-size: 50px;
+                line-height: 112%;
+                background: linear-gradient(90deg, #8F4DED 0%, #6D43E1 100.02%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            &__text {
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 34px;
+                color: var(--cs-text);
             }
         }
     }

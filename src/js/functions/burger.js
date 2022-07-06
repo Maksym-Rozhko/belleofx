@@ -8,11 +8,15 @@ import { enableScroll } from '../functions/enable-scroll';
   const overlay = document?.querySelector('[data-menu-overlay]');
   const navigationBackground = document.querySelector('.navigation-bg');
   const btnMenuCloseElem = document.querySelector('.btn-menu-close');
+  const btnFixedQuickNow = document.querySelector('.btn-fixed');
 
   burger?.addEventListener('click', (e) => {
     burger?.classList.toggle('burger--active');
     menu?.classList.toggle('menu--active');
     navigationBackground?.classList.toggle('navigation-bg__active');
+    setTimeout(() => {
+      btnFixedQuickNow?.classList.toggle('show');  
+    }, 500);
     
 
     if (menu?.classList.contains('menu--active')) {
