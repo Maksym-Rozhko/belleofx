@@ -137,12 +137,6 @@ a {
   }
 }
 
-@include small-desktop {
-  .wrapper {
-    max-width: 1080px;
-  }
-}
-
 @include tablet {
   .wrapper {
     max-width: 904px;
