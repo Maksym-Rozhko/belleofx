@@ -258,6 +258,54 @@
             padding: 17px;
         }
     }
+    .steps {
+        padding: 100px;
+
+        .title {
+            font-size: 50px;
+            margin-bottom: 60px;
+        }
+
+        &__container {
+            max-width: 1160px;
+        }
+
+        .step {
+            &__number {
+                width: 103px;
+                height: 103px;
+                font-size: 40px;
+            }
+
+            &__name {
+                font-size: 24px;
+                margin-top: 16px;
+                margin-bottom: 24px;
+            }
+
+            &__descript {
+                font-size: 18px;
+                line-height: 24px;
+                max-width: 190px;
+            }
+
+            &--dashed {
+                &::before,
+                &::after {
+                    width: 450px;
+                    top: 50px;
+                }
+
+                &::before {
+                    left: -400px;
+                }
+
+                &::after {
+                    right: -400px;
+                }
+            }
+        }
+    }
 }
 
 @include big-desktop {
@@ -520,6 +568,53 @@
             padding: 11px;
         }
     }
+    .steps {
+        padding: 80px;
+
+        .title {
+            font-size: 40px;
+            margin-bottom: 40px;
+        }
+
+        &__container {
+            max-width: 735px;
+        }
+
+        .step {
+            &__number {
+                width: 77px;
+                height: 77px;
+                font-size: 36px;
+            }
+
+            &__name {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+
+            &__descript {
+                font-size: 16px;
+                line-height: 21px;
+                max-width: 170px;
+            }
+
+            &--dashed {
+                &::before,
+                &::after {
+                    width: 300px;
+                    top: 35px;
+                }
+
+                &::before {
+                    left: -200px;
+                }
+
+                &::after {
+                    right: -200px;
+                }
+            }
+        }
+    }
 }
 
 @include small-desktop {
@@ -629,6 +724,9 @@
             max-width: 180px;
             padding: 11px 5px;
         }
+    }
+    .steps {
+        padding: 60px;
     }
 }
 
@@ -990,6 +1088,54 @@
             max-width: 200px;
         }
     }
+    .steps {
+        padding: 60px 0;
+
+        .title {
+            font-size: 30px;
+            line-height: 40px;
+            margin-bottom: 20px;
+        }
+
+        &__container {
+            max-width: 570px;
+        }
+
+        .step {
+            &__number {
+                width: 62px;
+                height: 62px;
+                font-size: 20px;
+                line-height: 30px;
+            }
+
+            &__name {
+                margin-top: 18px;
+                margin-bottom: 12px;
+            }
+
+            &__descript {
+                line-height: 24px;
+                max-width: 170px;
+            }
+
+            &--dashed {
+                &::before,
+                &::after {
+                    width: 160px;
+                    top: 30px;
+                }
+
+                &::before {
+                    left: -100px;
+                }
+
+                &::after {
+                    right: -100px;
+                }
+            }
+        }
+    }
 }
 
 @include mobile {
@@ -1110,6 +1256,55 @@
             max-width: inherit;
         }
     }
+    .steps {
+        .title {
+            margin-bottom: 40px;
+        }
+
+        &__container {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 40px;
+        }
+
+        .step {
+            flex-direction: row;
+
+            &__text {
+                margin-left: 20px;
+                text-align: left;
+            }
+
+            &__name {
+                font-size: 20px;
+                margin-top: 0px;
+                margin-bottom: 12px;
+            }
+
+            &__descript {
+                font-size: 16px;
+                max-width: 240px;
+                text-align: left;
+            }
+
+            &--dashed {
+                &::before,
+                &::after {
+                    width: 160px;
+                    top: 30px;
+                    transform: rotate(90deg);
+                }
+
+                &::before {
+                    left: -50px;
+                }
+
+                &::after {
+                    content: none;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 428px) {
@@ -1201,6 +1396,13 @@
     .platforms {
         &__images {
             margin-right: -220px;
+        }
+    }
+    .steps {
+        .title {
+            max-width: 256px;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 }

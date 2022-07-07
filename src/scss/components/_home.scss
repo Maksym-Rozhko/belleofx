@@ -579,3 +579,87 @@
         padding: 25px;
     }
 }
+
+.steps {
+    padding-top: 120px;
+    padding-bottom: 125px;
+
+    .title {
+        @include title;
+        text-align: center;
+        margin-bottom: 77px;
+    }
+
+    &__container {
+        max-width: 1450px;
+        margin: 0 auto;
+        @include flex-all-sb;
+    }
+
+    .step {
+        @include flex-v-center;
+        flex-direction: column;
+
+        &__text {
+            text-align: center;
+        }
+
+        &__number {
+            font-family: 'Gotham', sans-serif;
+            background: linear-gradient(90deg, #8F4DED 0%, #6D43E1 100.02%);
+            width: 129px;
+            height: 129px;
+            border-radius: 50%;
+            font-weight: 700;
+            font-size: 58px;
+            line-height: 112%;
+            color: var(--cs-white);
+            @include flex-all-center;
+        }
+
+        &__name {
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 112%;
+            color: var(--cs-text);
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        &__descript {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 34px;
+            color: var(--cs-text);
+            margin-top: 0;
+            margin-bottom: 0;
+            max-width: 240px;
+            text-align: center;
+        }
+
+        &--dashed {
+            position: relative;
+
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                width: 550px;
+                height: 3px;
+                background-image: url('../../images/icon/line.svg');
+                background-position: center;
+                background-size: auto;
+                top: 65px;
+                z-index: -1;
+            }
+
+            &::before {
+                left: -450px;
+            }
+
+            &::after {
+                right: -450px;
+            }
+        }
+    }
+}
