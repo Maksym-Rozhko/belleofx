@@ -663,3 +663,115 @@
         }
     }
 }
+
+.tips {
+    padding: 125px 0;
+    background-image: url('../../images/home/tips/tips-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1830px;
+        margin: 0 auto;
+    }
+
+    .title {
+        @include title;
+
+        span {
+            color: #8F4DED;
+        }
+    }
+
+    .tricks {
+        max-width: 822px;
+        width: 100%;
+        margin-right: 168px;
+
+        &__item {
+            background: var(--cs-white);
+            border-radius: 4px;    
+        }
+
+        &__item:not(:last-child) {
+            margin-bottom: 25px;
+        }
+
+        &__question {
+            padding-top: 33px;
+            padding-bottom: 33px;
+            padding-left: 32px;
+            padding-right: 50px;
+            cursor: pointer;
+        }
+
+        &__title {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 46px;
+            color: var(--cs-text);
+            position: relative;
+
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                width: 20px;
+                height: 2px;
+                border-radius: 10px;
+                background-color: var(--cs-text);
+                top: calc(50% - 4px);
+                right: 0;
+                transition: all ease-out .4s;
+            }
+            
+            &::before {
+                transform: rotate(90deg);
+            }
+        }
+
+        &__answer {
+            padding-left: 33px;
+            padding-right: 50px;
+            padding-bottom: 0;
+            max-width: 676px;
+            height: 0;
+            overflow: hidden;
+            padding-bottom: 0;
+            transition: all ease-in-out .4s;
+        }
+
+        &__answer {
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 24px;
+            color: var(--cs-text);
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        &__item.tricks__item--active {
+            .tricks__question {
+                .tricks__title {
+                    &::before {
+                        transform: rotate(0);
+                    }
+        
+                    &::after {
+                        opacity: 0;
+                    }
+                }
+            }
+            .tricks__answer {
+                padding-bottom: 50px;
+                height: auto;
+                overflow: visible;
+            }
+        }
+    }
+}

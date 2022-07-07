@@ -306,6 +306,38 @@
             }
         }
     }
+    .tips {
+        padding: 100px 0;
+    
+        &__container {
+            max-width: 1410px;
+        }
+    
+        .title {
+            font-size: 50px;
+        }
+    
+        .tricks {
+            max-width: 640px;
+            margin-right: 110px;
+    
+            &__item:not(:last-child) {
+                margin-bottom: 20px;
+            }
+    
+            &__question {
+                padding-top: 27px;
+                padding-bottom: 27px;
+                padding-left: 24px;
+                padding-right: 40px;
+            }
+
+            &__answer {
+                font-size: 18px;
+                max-width: 476px;
+            }
+        }
+    }
 }
 
 @include big-desktop {
@@ -615,6 +647,53 @@
             }
         }
     }
+    .tips {
+        padding: 76px 0;
+    
+        &__container {
+            max-width: 1111px;
+        }
+    
+        .title {
+            font-size: 40px;
+        }
+    
+        .tricks {
+            max-width: 480px;
+            margin-right: 0;
+    
+            &__item:not(:last-child) {
+                margin-bottom: 16px;
+            }
+    
+            &__question {
+                padding-top: 25px;
+                padding-bottom: 25px;
+                padding-left: 20px;
+                padding-right: 30px;
+            }
+
+            &__title {
+                font-size: 18px;
+            }
+
+            &__answer {
+                font-size: 16px;
+                max-width: 400px;
+                padding-left: 25px;
+                padding-right: 0;
+            }
+
+            &__item.tricks__item--active {
+                .tricks__question {
+                    padding-bottom: 10px;
+                }
+                .tricks__answer {
+                    padding-bottom: 30px;
+                }
+            }
+        }
+    }
 }
 
 @include small-desktop {
@@ -727,6 +806,13 @@
     }
     .steps {
         padding: 60px;
+    }
+    .tips {
+        padding: 58px 0;
+    
+        &__container {
+            max-width: 1080px;
+        }
     }
 }
 
@@ -882,6 +968,11 @@
         .btn-main {
             max-width: 220px;
             padding: 19px 5px;
+        }
+    }
+    .tips {
+        &__container {
+            max-width: 904px;
         }
     }
 }
@@ -1136,6 +1227,62 @@
             }
         }
     }
+    .tips {
+        padding: 60px 0;
+    
+        &__container {
+            max-width: 480px;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .title {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+    
+        .tricks {
+            max-width: inherit;
+    
+            &__item:not(:last-child) {
+                margin-bottom: 15px;
+            }
+    
+            &__question {
+                padding-top: 18px;
+                padding-bottom: 18px;
+                padding-left: 20px;
+                padding-right: 23px;
+            }
+
+            &__title {
+                font-size: 16px;
+                line-height: 24px;
+
+                &::before,
+                &::after {
+                    width: 15px;
+                    top: calc(50% - 2px);
+                }
+            }
+
+            &__answer {
+                font-size: 15px;
+                line-height: 18px;
+                padding-left: 18px;
+                padding-right: 5px;
+            }
+
+            &__item.tricks__item--active {
+                .tricks__question {
+                    padding-bottom: 8px;
+                }
+                .tricks__answer {
+                    padding-bottom: 25px;
+                }
+            }
+        }
+    }
 }
 
 @include mobile {
@@ -1305,6 +1452,36 @@
             }
         }
     }
+    .tips {
+        &__container {
+            max-width: inherit;
+        }
+    
+        .title {
+            margin-bottom: 20px;
+        }
+    
+        .tricks {
+            &__question {
+                padding-left: 16px;
+                padding-right: 20px;
+            }
+
+            &__answer {
+                padding-left: 16px;
+                padding-right: 5px;
+            }
+
+            &__item.tricks__item--active {
+                .tricks__question {
+                    padding-bottom: 5px;
+                }
+                .tricks__answer {
+                    padding-bottom: 20px;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 428px) {
@@ -1403,6 +1580,21 @@
             max-width: 256px;
             margin-left: auto;
             margin-right: auto;
+        }
+    }
+    .tips {
+        .tricks {
+            &__title {
+                max-width: 330px;
+
+                &::before,
+                &::after {
+                    right: -15px;
+                }
+            }
+            &__answer {
+                max-width: 300px;
+            }
         }
     }
 }
