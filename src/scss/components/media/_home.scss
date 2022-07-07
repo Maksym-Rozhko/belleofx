@@ -3,6 +3,7 @@
         font-size: 18px;
         padding: 17px 33px;
         right: -85px;
+        top: 450px;
     }
     .main-screen {
         background: url('../../images/icon/bg-circles.svg') no-repeat right/auto, linear-gradient(90deg, #6B2AC8 0%, #5127C6 100.02%);
@@ -510,7 +511,7 @@
 
 @include big-desktop {
     .btn-fixed {
-        top: 400px;
+        top: 350px;
         font-size: 16px;
         padding: 11px 20px;
         right: -75px;
@@ -1425,7 +1426,7 @@
         font-size: 16px;
         padding: 19px 43px;
         right: -90px;
-        top: 500px;
+        top: 400px;
     }
     .main-screen {
         margin-top: 80px;

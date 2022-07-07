@@ -178,3 +178,12 @@
 		transform: translate3d(0, 10px, 0);
 	}
 }
+
+@keyframes runSlideBg {
+	0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
