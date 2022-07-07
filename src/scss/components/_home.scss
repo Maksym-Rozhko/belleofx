@@ -552,3 +552,30 @@
         }
     }
 }
+
+.demo {
+    padding-top: 72px;
+    padding-bottom: 80px;
+    background: url('../../images/home/demo/four-phones.png') no-repeat right/auto, rgba(242, 246, 250, 0.5);
+
+    .title {
+        @include title;
+    }
+
+    .text {
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 43px;
+        color: var(--cs-text);
+        margin-top: 27px;
+        margin-bottom: 52px;
+    }
+
+    .btn-main {
+        @include btn-main;
+        max-width: 300px;
+        display: block;
+        text-align: center;
+        padding: 25px;
+    }
+}
