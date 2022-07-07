@@ -422,6 +422,24 @@
             }
         }
     }
+    .accept {
+        padding: 111px 0;
+    
+        .title {
+            font-size: 36px;
+            margin-bottom: 60px;
+        }
+    
+        &__container {
+            max-width: 1264px;
+        }
+
+        &__container,
+        &__top,
+        &__bottom {
+            gap: 78px;
+        }
+    }
 }
 
 @include big-desktop {
@@ -864,6 +882,23 @@
             }
         }
     }
+    .accept {
+        padding: 84px 0;
+    
+        .title {
+            margin-bottom: 30px;
+        }
+    
+        &__container {
+            max-width: 950px;
+        }
+
+        &__container,
+        &__top,
+        &__bottom {
+            gap: 58px;
+        }
+    }
 }
 
 @include small-desktop {
@@ -1202,6 +1237,23 @@
             .btn-main {
                 max-width: 220px;
             }
+        }
+    }
+    .accept {
+        padding: 37px 0;
+    
+        .title {
+            margin-bottom: 20px;
+        }
+    
+        &__container {
+            max-width: 910px;
+        }
+
+        &__container,
+        &__top,
+        &__bottom {
+            gap: 50px;
         }
     }
 }
@@ -1574,6 +1626,38 @@
             }
         }
     }
+    .accept {
+        padding: 30px 0;
+    
+        .title {
+            line-height: 40px;
+            margin-bottom: 26px;
+        }
+    
+        &__container {
+            display: block;
+            gap: 0;
+        }
+        
+        &__top {
+            margin-bottom: 22px;
+            .accept__image:first-child {
+                order: 1;
+            }
+        }
+
+        &__bottom {
+            .accept__image:nth-child(2) {
+                order: -1;
+            }
+        }
+
+        &__image {
+            .image {
+                max-width: 70%;
+            }
+        }
+    }
 }
 
 @include mobile {
@@ -1810,6 +1894,13 @@
                 position: static;
                 max-width: inherit;
                 margin-top: 30px;
+            }
+        }
+    }
+    .accept {
+        &__image {
+            .image {
+                max-width: 100%;
             }
         }
     }
