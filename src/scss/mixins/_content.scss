@@ -46,6 +46,29 @@
     color: var(--cs-text);
 }
 
+@mixin socials {
+    @include flex-all-sb;
+    gap: 50px;
+    max-width: 390px;
+    margin: 0 auto;
+
+    &__link {        
+        .icon {
+            display: block;
+            width: 60px;
+            height: 60px;
+            fill: #8F4DED;
+            transition: all ease-in-out .4s;
+        }
+
+        &:hover {
+            .icon {
+                fill: #6B2AC8;
+            }
+        }
+    }
+}
+
 .section {
   padding: 100px 0;
 }

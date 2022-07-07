@@ -842,3 +842,78 @@
         }
     }
 }
+
+.subscribe {
+    padding: 121px 0;
+    background: #070417;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+
+    &__container {
+        max-width: 1664px;
+        margin: 0 auto;
+        @include flex-all-sb;
+    }
+
+    &__title,
+    .title {
+        @include title;
+        color: var(--cs-white);
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 46px;
+        line-height: 53px;
+        margin-bottom: 53px;
+    }
+
+    .title {
+        margin-bottom: 50px;
+    }
+
+    .socials {
+        @include socials;
+    }
+
+    &__newsletter {
+        max-width: 784px;
+        width: 100%;
+    }
+
+    .form {
+        position: relative;
+
+        &__input {
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 24px;
+            color: #CFD4E9;
+            padding: 35px 12px 35px 25px;
+            border: 1px solid #CFD4E9;
+            background-color: transparent;
+            border-radius: 4px;
+            width: 100%;
+
+            &::placeholder {
+                color: #CFD4E9;
+            }
+        }
+
+        .btn-main {
+            @include btn-main;
+            font-size: 22px;
+            line-height: 21px;
+            border-radius: 4px;
+            position: absolute;
+            max-width: 300px;
+            padding: 25px 10px;
+            right: 12px;
+            top: calc(50% - 37px);
+            border: none;
+
+            &:hover {
+                background: linear-gradient(90deg, #6B2AC8 0%, #5127C6 100.02%);
+            }
+        }
+    }
+}
