@@ -42,3 +42,26 @@
         color: #F7F7F7;
     }
 }
+
+.scroll-top {
+    width: 98px;
+    height: 98px;
+    background: linear-gradient(90deg, rgba(143, 77, 237, 0.28) 0%, rgba(109, 67, 225, 0.28) 100.02%);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    position: fixed;
+    z-index: 11;
+    bottom: 125px;
+    right: 60px;
+    @include flex-all-center;
+    cursor: pointer;
+    transition: all ease-in-out .4s;
+
+    .icon {
+        transform: rotate(180deg);
+    }
+
+    &:hover {
+        background: linear-gradient(90deg, #6B2AC8 0%, #5127C6 100.02%);
+    }
+}
