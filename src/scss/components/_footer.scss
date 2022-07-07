@@ -1,3 +1,44 @@
 .footer {
+    padding: 51px 0;
+    background-color: var(--cs-text-2);
 
+    &__container {
+        @include flex-all-sb;
+    }
+
+    .nav {
+        ul {
+            padding-left: 0;
+            margin-top: 0;
+            margin-bottom: 0;
+            list-style: none;
+            @include flex-all-sb;
+            gap: 41px;
+
+            li {
+                a {
+                    font-weight: 400;
+                    font-size: 22px;
+                    line-height: 100%;
+                    color: #F7F7F7;
+                    transition: all ease-in-out .4s;
+
+                    &:hover {
+                        background: linear-gradient(90deg, #8F4DED 0%, #6D43E1 100.02%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        background-clip: text;
+                        text-fill-color: transparent;
+                    }
+                }
+            }
+        }
+    }
+
+    .copyright {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 100%;
+        color: #F7F7F7;
+    }
 }

@@ -1906,6 +1906,14 @@
                 &::after {
                     content: "";
                 }
+
+                &::before {
+                    top: 6px;
+                }
+
+                &::after {
+                    top: 13px;
+                }
             }
         }
     
