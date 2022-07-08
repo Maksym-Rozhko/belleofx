@@ -14,11 +14,45 @@
         @include('partials/home.html')
     </main>
     @include('partials/footer.html')
-    <butto type="button" class="scroll-top d-none">
+    <button type="button" class="scroll-top d-none">
         <svg class="icon" width="26" height="14" viewBox="0 0 26 14" xmlns="http://www.w3.org/2000/svg">
             <path d="M14.1252 13.3616L25.6917 1.79513C26.1028 1.38402 26.1028 0.719456 25.6917 0.308338C25.2805 -0.102779 24.616 -0.102779 24.2049 0.308338L13.3818 11.1314L2.55882 0.308337C2.14771 -0.102781 1.48314 -0.102781 1.07203 0.308337C0.866987 0.513378 0.763924 0.782544 0.763924 1.05176C0.763924 1.32093 0.866987 1.59014 1.07203 1.79518L12.6385 13.3616C13.0495 13.7727 13.7141 13.7727 14.1252 13.3616Z" fill="white"/>
         </svg>            
-    </butto>
+    </button>
+    <div class="graph-modal">
+        <div class="graph-modal__container modal-subscribe" role="dialog" aria-modal="true" data-graph-target="modalSubscribe">
+          <div class="graph-modal__content">
+            <div class="graph-modal__image">
+                <img src="/images/modal/modal-check.png" alt="Thank you!" class="image">
+            </div>
+            <h4 class="graph-modal__title">
+                Thank you!
+            </h4>
+            <p class="graph-modal__text">
+                Our manager will contact you!
+            </p>
+            <button class="btn-reset btn-main btn-main--black graph-modal__close" aria-label="Закрыть модальное окно">
+                Great! Thanx!👌
+            </button>
+          </div>
+        </div>
+        <div class="graph-modal__container modal-callback" role="dialog" aria-modal="true" data-graph-target="modalCallback">
+            <div class="graph-modal__content">
+                <div class="graph-modal__image">
+                    <img src="/images/modal/modal-great.png" alt="Great!" class="image">
+                </div>
+                <h4 class="graph-modal__title">
+                    Great!
+                </h4>
+                <p class="graph-modal__text">
+                    Now you will be aware of the latest news!
+                </p>
+                <button class="btn-reset btn-main btn-main--black graph-modal__close" aria-label="Закрыть модальное окно">
+                    Ok, Thanx!👌
+                </button>
+            </div>
+          </div>
+    </div>      
 </body>
 
 </html>

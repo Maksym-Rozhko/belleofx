@@ -65,3 +65,9 @@
         background: linear-gradient(90deg, #6B2AC8 0%, #5127C6 100.02%);
     }
 }
+
+.graph-modal {
+    &__container {
+        @include modal;
+    }
+}

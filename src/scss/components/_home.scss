@@ -24,7 +24,7 @@
 }
 .main-screen {
     margin-top: 115px;
-    background: url('../../images/icon/bg-circles.svg') no-repeat right/1850px, linear-gradient(90deg, #6B2AC8 0%, #5127C6 100.02%);
+    background: url('/images/icon/bg-circles.svg') no-repeat right/1850px, linear-gradient(90deg, #6B2AC8 0%, #5127C6 100.02%);
     padding-top: 97px;
     padding-bottom: 157px;
 
@@ -220,7 +220,7 @@
             }
 
             &::after {
-                background-image: url('../../images/icon/check-arrow.svg');
+                background-image: url('/images/icon/check-arrow.svg');
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: cover;
@@ -317,7 +317,7 @@
                     &::before {
                         content: "";
                         position: absolute;
-                        background-image: url('../../images/icon/check-arrow.svg');
+                        background-image: url('/images/icon/check-arrow.svg');
                         background-repeat: no-repeat;
                         background-position: center;
                         background-size: cover;
@@ -394,7 +394,7 @@
 }
 .platforms {
     padding: 120px 0;
-    background: url('../../images/icon/bg-circles.svg') no-repeat center/contain,linear-gradient(90deg, #8F4DED 0%, #6D43E1 100.02%);
+    background: url('/images/icon/bg-circles.svg') no-repeat center/contain,linear-gradient(90deg, #8F4DED 0%, #6D43E1 100.02%);
 
     .title {
         @include title;
@@ -461,7 +461,7 @@
             &::after {
                 width: 12px;
                 height: 8px;
-                background-image: url('../../images/icon/check-arrow-white.svg');
+                background-image: url('/images/icon/check-arrow-white.svg');
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: cover;
@@ -562,7 +562,7 @@
 .demo {
     padding-top: 72px;
     padding-bottom: 80px;
-    background: url('../../images/home/demo/four-phones.png') no-repeat right/auto, rgba(242, 246, 250, 0.5);
+    background: url('/images/home/demo/four-phones.png') no-repeat right/auto, rgba(242, 246, 250, 0.5);
 
     .title {
         @include title;
@@ -652,7 +652,7 @@
                 position: absolute;
                 width: 550px;
                 height: 3px;
-                background-image: url('../../images/icon/line.svg');
+                background-image: url('/images/icon/line.svg');
                 background-position: center;
                 background-size: auto;
                 top: 65px;
@@ -672,7 +672,7 @@
 
 .tips {
     padding: 125px 0;
-    background-image: url('../../images/home/tips/tips-bg.jpg');
+    background-image: url('/images/home/tips/tips-bg.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -786,7 +786,7 @@
     padding: 73px 0;
 
     &__container {
-        background: url('../../images/home/form/form-bg.jpg') no-repeat center/cover;
+        background: url('/images/home/form/form-bg.jpg') no-repeat center/cover;
         border-radius: 16px;
         max-width: 1662px;
         margin: 0 auto;
@@ -926,7 +926,7 @@
 
 .accept {
     padding: 140px 0;
-    background: url('../../images/home/accept/accept-bg.png') no-repeat center/cover;
+    background: url('/images/home/accept/accept-bg.png') no-repeat center/cover;
 
     .title {
         @include title;

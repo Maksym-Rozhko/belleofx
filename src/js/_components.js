@@ -7,3 +7,4 @@ import headerScrollFixed from './components/fixedHeader';
 import accordion from './components/accordion';
 import scrollToTop from './components/scrollToTop';
 // import smoothScrollToElems from './components/smoothScrollToElems';
+import modal from './components/modal';

@@ -6,7 +6,7 @@
         top: 450px;
     }
     .main-screen {
-        background: url('../../images/icon/bg-circles.svg') no-repeat right/auto, linear-gradient(90deg, #6B2AC8 0%, #5127C6 100.02%);
+        background: url('/images/icon/bg-circles.svg') no-repeat right/auto, linear-gradient(90deg, #6B2AC8 0%, #5127C6 100.02%);
         margin-top: 100px;
         padding-top: 78px;
         padding-bottom: 120px;
@@ -241,7 +241,7 @@
     }
     .demo {
         padding: 60px 0;
-        background: url('../../images/home/demo/four-phones.png') no-repeat right/contain, rgba(242, 246, 250, 0.5);
+        background: url('/images/home/demo/four-phones.png') no-repeat right/contain, rgba(242, 246, 250, 0.5);
     
         .title {
             font-size: 50px;
@@ -517,7 +517,7 @@
         right: -75px;
     }
     .main-screen {
-        background: url('../../images/icon/bg-circles.svg') no-repeat right/contain, linear-gradient(90deg, #6B2AC8 0%, #5127C6 100.02%);
+        background: url('/images/icon/bg-circles.svg') no-repeat right/contain, linear-gradient(90deg, #6B2AC8 0%, #5127C6 100.02%);
         margin-top: 86px;
         padding-top: 58px;
         padding-bottom: 134px;
@@ -1032,7 +1032,7 @@
 
 @include small-desktop {
     .main-screen {
-        background: url('../../images/icon/bg-circles.svg') no-repeat right/1000px, linear-gradient(90deg, #6B2AC8 0%, #5127C6 100.02%);
+        background: url('/images/icon/bg-circles.svg') no-repeat right/1000px, linear-gradient(90deg, #6B2AC8 0%, #5127C6 100.02%);
         margin-top: 70px;
         padding-top: 50px;
         padding-bottom: 120px;
@@ -1208,7 +1208,7 @@
         top: 600px;
     }
     .main-screen {
-        background: url('../../images/icon/bg-circles.svg') no-repeat top/contain, linear-gradient(90deg, #6B2AC8 0%, #5127C6 100.02%);
+        background: url('/images/icon/bg-circles.svg') no-repeat top/contain, linear-gradient(90deg, #6B2AC8 0%, #5127C6 100.02%);
         margin-top: 100px;
         padding-top: 80px;
         padding-bottom: 90px;
@@ -1607,7 +1607,7 @@
         }
     }
     .demo {
-        background: url('../../images/home/demo/four-phones.png') no-repeat 300px/cover, rgba(242, 246, 250, 0.5);
+        background: url('/images/home/demo/four-phones.png') no-repeat 300px/cover, rgba(242, 246, 250, 0.5);
     
         .title {
             font-size: 30px;
@@ -1731,7 +1731,7 @@
         padding: 40px 0;
 
         &__container {
-            background: url('../../images/home/form/form-bg-mob.jpg') no-repeat center/cover;
+            background: url('/images/home/form/form-bg-mob.jpg') no-repeat center/cover;
             max-width: 664px;
             padding-top: 40px;
             padding-bottom: 206px;
@@ -1961,7 +1961,7 @@
     .demo {
         padding-top: 40px;
         padding-bottom: 270px;
-        background: url('../../images/home/demo/demo-mob.png') no-repeat bottom/auto, rgba(242, 246, 250, 0.5);
+        background: url('/images/home/demo/demo-mob.png') no-repeat bottom/auto, rgba(242, 246, 250, 0.5);
 
         &__container {
             text-align: center;
@@ -2052,7 +2052,7 @@
     }
     .request {
         padding: 0;
-        background: url('../../images/home/form/form-bg-mob.jpg') no-repeat center/cover;
+        background: url('/images/home/form/form-bg-mob.jpg') no-repeat center/cover;
 
         &__container {
             max-width: inherit;
