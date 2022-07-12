@@ -6,7 +6,7 @@ new Swiper('.swiper.main-slider', {
   speed: 1000,
   loop: true,
   autoplay: {
-    delay: 3000,
+    delay: 5000,
     disableOnInteraction: false,
   },
 

@@ -42,7 +42,7 @@
             max-width: 1000px;
     
             .image {
-                max-height: 544px;
+                max-height: 500px;
             }
         }
     }
@@ -89,6 +89,12 @@
 
             &__item {
                 font-size: 24px;
+
+                &::after {
+                    width: 20px;
+                    height: 20px;
+                    top: calc(50% - 10px);
+                }
             }
         }
 
@@ -129,7 +135,8 @@
                 margin-bottom: 38px;
 
                 &-item {
-                    padding-left: 34px;
+                    padding-left: 47px;
+                    padding-right: 38px;
                     padding-top: 10px;
                     padding-bottom: 10px;
                     
@@ -649,8 +656,8 @@
                 margin-bottom: 30px;
 
                 &-item {
-                    padding-left: 25px;
-                    padding-right: 25px;
+                    padding-left: 35px;
+                    padding-right: 28px;
                     padding-top: 7px;
                     padding-bottom: 7px;
                     
@@ -2190,7 +2197,10 @@
                 margin-bottom: 38px;
 
                 &-item {
-                    padding: 13px 34px;
+                    padding-top: 13px;
+                    padding-bottom: 13px;
+                    padding-left: 45px;
+                    padding-right: 38px;
 
                     .name,
                     .value {
