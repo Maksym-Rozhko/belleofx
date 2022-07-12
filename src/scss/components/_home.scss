@@ -120,7 +120,7 @@
                 &-active {
                     &::after {
                         width: 100%;
-                        animation: runSlideBg 4s ease-in-out forwards;
+                        animation: runSlideBg 6s ease-in-out forwards;
                     }
                 }
             }
@@ -843,7 +843,7 @@
                 border-radius: 4px;
                 max-width: inherit;
                 border: none;
-                
+
                 &:hover {
                     background: var(--cs-white);
                     color: var(--cs-text);
