@@ -1,6 +1,7 @@
 import GraphModal from 'graph-modal';
 const modalSubscribe = new GraphModal();
 const modalCallback = new GraphModal();
+const modalCV = new GraphModal();
 
 const closeModalElems = document.querySelectorAll('.graph-modal__close');
 
